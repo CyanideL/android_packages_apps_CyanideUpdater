@@ -9,12 +9,12 @@
  *  LICENSE   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  *
  *  AUTHORS:     fronti90, mnazim, tchaari, kufikugel
- *  DESCRIPTION: OTACenter keeps our rom up to date
+ *  DESCRIPTION: VRTUpdater keeps our rom up to date
  *
  *=========================================================================
  */
 
-package com.euphoria.ota.updater;
+package com.vrtoxin.ota.updater;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;

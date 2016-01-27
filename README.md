@@ -1,3 +1,3 @@
-packages_apps_OTACenter
+packages_apps_VRTUpdater
 ==========================
-Euphoria-OS OTA App
+VRToxin Android OTA App

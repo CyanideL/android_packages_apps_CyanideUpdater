@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
  * Copyright (C) 2013 Mahdi-ROM
+ * Copyright (C) 2016 The VRToxin Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +18,7 @@
 
 <resources>
     <!-- Main strings -->
-    <string name="app_name">OTA Center</string>
+    <string name="app_name">VRTUpdater</string>
     <string name="menu_settings">Impostazioni</string>
     <string name="device_title">Device</string>
     <string name="device_name_title">Nome:</string>
@@ -38,7 +39,7 @@
     <string name="refresh_button">Aggiorna</string>
 
     <!-- Settings -->
-    <string name="settings_title">OTA Settings</string>    
+    <string name="settings_title">VRTUpdater Settings</string>    
     <string name="update_interval_title">Intervallo automatico di ricerca aggiornamenti</string>
     <string name="update_interval_summary">Setta un intervallo automatico per la ricerca di aggiornamenti</string>
     <string name="update_interval_day">Ongi 24 ore</string>
@@ -81,21 +82,17 @@
     <string name="donate_title">Dona</string>
     <string name="donate_summary">Dona</string>
     <string name="source_title">Source</string>
-    <string name="source_summary">github.com/euphoria-os</string>
-    <string name="center_summary"><b>OTACenter</b> provides tools &amp; information to help make your experience with Euphoria-OS even better. Upgrade to the newest version of our ROM with <b>OTACenter</b>.</string>
-    <string name="bugreport_title">Bugreport</string>
-    <string name="bugreport_summary">Crea un bugreport completo</string>
-    <string name="report_infosuccess">Crea un report di sistema da fornire ad Euphoria-OS. Puoi trovare lo Zip all\'interno della tua your SD-Card nella directory chiamata \"BugReport\".</string>
-    <string name="report_infofail">Impossibile creare un Bugreport, per favore riprova.</string>
+    <string name="source_summary">github.com/VRToxin</string>
+    <string name="center_summary"><b>VRTUpdater</b> provides tools &amp; information to help make your experience with VRToxin Android even better. Upgrade to the newest version of our ROM with <b>VRTUpdater</b>.</string>
 
-    <string name="about_home_url"><a href="http://mahdi-rom.com/">Euphoria-OS</a></string>
-    <string name="about_ota">OTACenter ti permette facilmente di gestire la tua rom!</string>
-    <string name="about_copyright">\u00A9 Copyright Slimroms 2013 modifed for Euphoria-OS</string>
-    <string name="about_version">OTACenter 2.0</string>
-    <string name="about_contact">Conttaci a Mahdi.Rom@gmail.com</string>
+    <string name="about_home_url"><a href="vrtoxin.net/">VRToxin Android</a></string>
+    <string name="about_ota">VRTUpdater ti permette facilmente di gestire la tua rom!</string>
+    <string name="about_copyright">\u00A9 Copyright Slimroms 2013 modifed for VRToxin Android</string>
+    <string name="about_version">VRTUpdater 3.0</string>
+    <string name="about_contact"></string>
     <string name="about_contact_text">Dicci cosa ne pensi e facci sapere eventuali bug o problemi</string>
     <string name="about_license">Open source licenses</string>
-    <string name="about_license_text">OTACenter app:</string>
+    <string name="about_license_text">VRTUpdater App:</string>
     <string name="about_license_url"><a href="http://otaslim.slimroms.net/license.htm">gpl(2)</a></string>
 
     <!-- Sizer  -->

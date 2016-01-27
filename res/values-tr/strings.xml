@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
  * Copyright (C) 2013 Mahdi-ROM
+ * Copyright (C) 2016 The VRToxin Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +18,7 @@
 
 <resources>
     <!-- Main strings -->
-    <string name="app_name">OTA Center</string>
+    <string name="app_name">VRTUpdater</string>
     <string name="menu_settings">Ayarlar</string>
     <string name="device_title">Cihaz</string>
     <string name="device_name_title">Adı:</string>
@@ -38,7 +39,7 @@
     <string name="refresh_button">Yenile</string>
 
     <!-- Settings -->
-    <string name="settings_title">OTA Ayarları</string>    
+    <string name="settings_title">VRTUpdater</string>    
     <string name="update_interval_title">Otomatik güncelleme kontrolü aralığı</string>
     <string name="update_interval_summary">Otomatik güncelleme kontrolü aralığını ayarla</string>
     <string name="update_interval_day">Her 24 saatte</string>
@@ -81,18 +82,14 @@
     <string name="donate_title">Bağış</string>
     <string name="donate_summary">Bağış</string>
     <string name="source_title">Kaynak</string>
-    <string name="source_summary">github.com/euphoria-os</string>
-    <string name="center_summary"><b>OTACenter</b> Euphoria-OS araçlar &amp; bilgi için daha iyi deneyiminize yardımcı olmak için sağlamaktadır. ROM u yeni sürüme yükseltme <b>OTACenter</b>.</string>
-    <string name="bugreport_title">Hata raporu</string>
-    <string name="bugreport_summary">Tam bir hata raporu oluşturma</string>
-    <string name="report_infosuccess">.</string>
-    <string name="report_infofail">Bir sistem raporu düzenlendi, Euphoria-OS bunu sağlayacak. SD-Kart dizininde \"Hata raporları\" adında Zip dosyasını bulabilirsiniz.</string>
+    <string name="source_summary">github.com/VRToxin</string>
+    <string name="center_summary"><b>VRTUpdater</b> VRToxin Android araçlar &amp; bilgi için daha iyi deneyiminize yardımcı olmak için sağlamaktadır. ROM u yeni sürüme yükseltme <b>VRTUpdater</b>.</string>
 
-    <string name="about_home_url"><a href="http://mahdi-rom.com/">Euphoria-OS</a></string>
+    <string name="about_home_url"><a href="http://mahdi-rom.com/">VRToxin Android</a></string>
     <string name="about_ota">OTA Merkezi kolayca ROM u yönetmenize olanak sağlar!</string>
-    <string name="about_copyright">\u00A9 Telif Slimroms 2013 olarak değişikliğe uğratılmış Euphoria-OS</string>
-    <string name="about_version">OTA Merkezi 2.0</string>
-    <string name="about_contact">Bize ulaşın Mahdi.Rom@gmail.com</string>
+    <string name="about_copyright">\u00A9 Telif Slimroms 2013 olarak değişikliğe uğratılmış VRToxin Android</string>
+    <string name="about_version">VRTUpdater 3.0</string>
+    <string name="about_contact"></string>
     <string name="about_contact_text">Ne düşündüğünüzü bize söyleyin ya da bize bir hata veya sorun hakkında bildirin</string>
     <string name="about_license">Açık kaynak lisansları</string>
     <string name="about_license_text">OTA Merkezi uyglaması:</string>

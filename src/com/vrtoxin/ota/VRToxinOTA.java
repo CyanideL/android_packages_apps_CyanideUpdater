@@ -14,7 +14,7 @@
  *=========================================================================
  */
 
-package com.euphoria.ota;
+package com.vrtoxin.ota;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -37,12 +37,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.euphoria.ota.updater.UpdateChecker;
-import com.euphoria.ota.updater.UpdateListener;
-import com.euphoria.ota.settings.Settings;
+import com.vrtoxin.ota.updater.UpdateChecker;
+import com.vrtoxin.ota.updater.UpdateListener;
+import com.vrtoxin.ota.settings.Settings;
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
-public class EuphoriaOTA extends PreferenceFragment implements OnSharedPreferenceChangeListener {
+public class VRToxinOTA extends PreferenceFragment implements OnSharedPreferenceChangeListener {
 
     private static final int ID_DEVICE_NAME = R.id.deviceName;
     private static final int ID_DEVICE_CODE_NAME = R.id.deviceCodename;
@@ -66,7 +66,7 @@ public class EuphoriaOTA extends PreferenceFragment implements OnSharedPreferenc
 
     SharedPreferences prefs;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.euphoria_ota, container, false);
+        View view = inflater.inflate(R.layout.vrtoxin_ota, container, false);
         return view;
     }
 
@@ -190,7 +190,7 @@ public class EuphoriaOTA extends PreferenceFragment implements OnSharedPreferenc
     private void addShortCutFragment() {
         FragmentManager fragmentManager = this.getActivity().getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        EuphoriaLinks Links = new EuphoriaLinks();
+        VRToxinLinks Links = new VRToxinLinks();
         fragmentTransaction.replace(R.id.linksFragment, Links);
         fragmentTransaction.commit();
     }

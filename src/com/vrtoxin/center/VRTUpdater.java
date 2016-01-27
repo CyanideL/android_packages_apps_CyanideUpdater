@@ -9,17 +9,17 @@
  *  LICENSE   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  *
  *  AUTHORS:     fronti90, mnazim, tchaari, kufikugel
- *  DESCRIPTION: OTACenter: manage your ROM
+ *  DESCRIPTION: VRTUpdater: manage your ROM
  *
  *=========================================================================
  */
-package com.euphoria.center;
+package com.vrtoxin.center;
 
 import java.util.Locale;
 
-import com.euphoria.ota.EuphoriaOTA;
-import com.euphoria.ota.R;
-import com.euphoria.ota.settings.Settings;
+import com.vrtoxin.ota.VRToxinOTA;
+import com.vrtoxin.ota.R;
+import com.vrtoxin.ota.settings.Settings;
 
 import android.app.Activity;
 import android.app.FragmentManager;
@@ -29,21 +29,21 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class OTACenter extends Activity {
+public class VRTUpdater extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new EuphoriaOTA()).commit();
+                new VRToxinOTA()).commit();
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.euphoria_center, menu);
+        inflater.inflate(R.menu.vrtoxin_center, menu);
         return true;
     }
 
