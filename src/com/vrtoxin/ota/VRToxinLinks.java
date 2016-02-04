@@ -160,7 +160,7 @@ public class VRToxinLinks extends Fragment {
             String strLine;
             while ((strLine = br.readLine()) != null) {
                 String[] line = strLine.split("=");
-                if (line[0].equals("eos.ota.version")) {
+                if (line[0].equals("vrtoxin.ota.version")) {
                     mStrCurFile = line[1];
                 }
             }
