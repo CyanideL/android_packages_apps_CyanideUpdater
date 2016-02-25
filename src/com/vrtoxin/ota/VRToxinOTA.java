@@ -28,6 +28,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.view.LayoutInflater;
@@ -148,11 +149,11 @@ public class VRToxinOTA extends PreferenceFragment implements OnSharedPreference
                 String[] line = strLine.split("=");
                 if (line[0].equalsIgnoreCase("ro.product.device")) {
                     mStrCodename = line[1];
-                } else if (line[0].equalsIgnoreCase("eos.ota.version")) {
+                } else if (line[0].equalsIgnoreCase("vrtoxin.ota.version")) {
                     mStrCurVer = line[1];
-                } else if (line[0].equalsIgnoreCase("ro.product.model")) {
+                } else if (line[0].equalsIgnoreCase("ro.build.product")) {
                     mStrDevice = line[1];
-                } else if (line[0].equalsIgnoreCase("ro.modversion")) {
+                } else if (line[0].equalsIgnoreCase("ro.vrtoxin.version")) {
                     mStrCurFile = line[1];
                 }
             }
@@ -162,6 +163,9 @@ public class VRToxinOTA extends PreferenceFragment implements OnSharedPreference
                     Toast.LENGTH_LONG).show();
             e.printStackTrace();
         }
+
+        if(mStrCodename == null){ mStrCodename = Build.DEVICE; }
+        if(mStrDevice == null){ mStrDevice = Build.MODEL; }
 
         mDeviceOut.setText(getString(R.string.device_name_title) + " " + mStrDevice);
         mCodenameOut.setText(getString(R.string.codename_title) + " " + mStrCodename);
@@ -179,7 +183,7 @@ public class VRToxinOTA extends PreferenceFragment implements OnSharedPreference
             mStrUpToDate = getString(R.string.error_reading_title);
         } else if (updateFile.compareToIgnoreCase(mStrCurVer)<=0) {
             mStrUpToDate = getString(R.string.up_to_date_title);
-            mUpdateFile.setTextColor(0xff009688);
+            mUpdateFile.setTextColor(0xff1976D2);
         } else {
             mStrUpToDate = updateFile;
         }
